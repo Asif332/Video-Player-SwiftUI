@@ -1,7 +1,7 @@
 # CustomVideoPlayerSwiftUI
 Custom AVPlayer in SwiftUI has the ability to play multiple AVPlayer items in horizontal paging.
 
-This is a series of learning experience in which i regularly try to create video player clone using swiftUI and update it as well!
+This is a series of learning experience in which i try to create video player clone using swiftUI and update it as well!
 
 ## Glance of Updates
 
