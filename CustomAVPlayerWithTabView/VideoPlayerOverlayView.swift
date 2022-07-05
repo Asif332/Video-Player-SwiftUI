@@ -34,7 +34,7 @@ struct VideoPlayerOverlayView: View {
                     }
                 }
             
-            TopBar().padding(.vertical, 50)
+            TopBar()
         }
         
     }
@@ -98,7 +98,7 @@ private var discriptionView: some View{
             Text("MA")
                 .frame(width: 30, height: 30)
                 .foregroundColor(.white)
-                .background(.gray)
+                .background(Color.gray)
                 .clipShape(Circle())
             Text("Mohammad Asif")
                 .foregroundColor(.white)
@@ -106,5 +106,6 @@ private var discriptionView: some View{
         Text( "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.")
             .foregroundColor(.white)
             .padding(.trailing, 20)
+            .padding(.bottom, 20)
     }
 }

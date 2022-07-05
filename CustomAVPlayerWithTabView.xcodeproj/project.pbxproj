@@ -15,6 +15,8 @@
 		792906F42874B342006008A3 /* CustomVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792906F32874B342006008A3 /* CustomVideoPlayer.swift */; };
 		792906F62874B393006008A3 /* VideoPlayerOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792906F52874B393006008A3 /* VideoPlayerOverlayView.swift */; };
 		792906F82874B3C9006008A3 /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792906F72874B3C9006008A3 /* VideoPlayerViewModel.swift */; };
+		792906FB2874C1A1006008A3 /* CustomVideoPlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 792906FA2874C1A1006008A3 /* CustomVideoPlayer.png */; };
+		792906FD2874D760006008A3 /* playlist.png in Resources */ = {isa = PBXBuildFile; fileRef = 792906FC2874D760006008A3 /* playlist.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		792906F52874B393006008A3 /* VideoPlayerOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerOverlayView.swift; sourceTree = "<group>"; };
 		792906F72874B3C9006008A3 /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 		792906F92874B50C006008A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		792906FA2874C1A1006008A3 /* CustomVideoPlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CustomVideoPlayer.png; sourceTree = "<group>"; };
+		792906FC2874D760006008A3 /* playlist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playlist.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,10 @@
 		792906E22874B22E006008A3 /* CustomAVPlayerWithTabView */ = {
 			isa = PBXGroup;
 			children = (
+				792906FC2874D760006008A3 /* playlist.png */,
+				792906FA2874C1A1006008A3 /* CustomVideoPlayer.png */,
 				792906F92874B50C006008A3 /* Info.plist */,
+				792906E32874B22E006008A3 /* CustomAVPlayerWithTabViewApp.swift */,
 				792906E52874B22E006008A3 /* ContentView.swift */,
 				792906F12874B305006008A3 /* HomeTabView.swift */,
 				792906F32874B342006008A3 /* CustomVideoPlayer.swift */,
@@ -75,7 +82,6 @@
 		792906E92874B230006008A3 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				792906E32874B22E006008A3 /* CustomAVPlayerWithTabViewApp.swift */,
 				792906EA2874B230006008A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -139,6 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792906FB2874C1A1006008A3 /* CustomVideoPlayer.png in Resources */,
+				792906FD2874D760006008A3 /* playlist.png in Resources */,
 				792906EB2874B230006008A3 /* Preview Assets.xcassets in Resources */,
 				792906E82874B230006008A3 /* Assets.xcassets in Resources */,
 			);
@@ -285,7 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CustomAVPlayerWithTabView/Preview Content\"";
-				DEVELOPMENT_TEAM = NNZP58UQQ9;
+				DEVELOPMENT_TEAM = 4C8LYED897;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomAVPlayerWithTabView/Info.plist;
@@ -295,12 +303,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sapient.CustomAVPlayerWithTabView;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.CustomVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CustomAVPlayerWithTabView/Preview Content\"";
-				DEVELOPMENT_TEAM = NNZP58UQQ9;
+				DEVELOPMENT_TEAM = 4C8LYED897;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomAVPlayerWithTabView/Info.plist;
@@ -326,12 +335,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sapient.CustomAVPlayerWithTabView;
+				PRODUCT_BUNDLE_IDENTIFIER = asif.CustomVideoPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

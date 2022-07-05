@@ -12,6 +12,7 @@ struct HomeTabView: View {
     let viewModel: VideoPlayerViewModel
     @State var currentReel = ""
     @State var reels: [Reel] = []
+    let index: Int
     let player = AVPlayer()
 
     var body: some View {
@@ -52,16 +53,21 @@ struct HomeTabView: View {
         }
         .ignoresSafeArea(.all, edges: .top)
         .background(Color.black.ignoresSafeArea())
+        .navigationBarTitle("Player View", displayMode: .inline)
         // setting initial reel
         .onAppear() {
             reels = self.viewModel.reels
-            currentReel = reels.first?.id ?? ""
+            currentReel = reels[index].id
+        }
+        .onDisappear() {
+            self.player.replaceCurrentItem(with: nil)
+            self.player.pause()
         }
     }
 }
 
 struct HomeTabView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTabView(viewModel: VideoPlayerViewModel(playlist: []))
+        HomeTabView(viewModel: VideoPlayerViewModel(playlist: []), index: 1)
     }
 }

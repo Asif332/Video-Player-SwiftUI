@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        HomeTabView(viewModel: VideoPlayerViewModel(playlist: Media.playlist))
+        NavigationView {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Video Playlist! ")
+                    .font(.title)
+                    .foregroundColor(.white)
+                List(Media.playlist.indices, id:\.self) { idx in
+                    NavigationLink {
+                        HomeTabView(viewModel: VideoPlayerViewModel(playlist: Media.playlist), index: idx)
+                    } label: {
+                        Label(Media.playlist[idx].title, systemImage: "play")
+                    }
+                }
+            }
+        }
+        .navigationBarTitle (Text("Video Player"), displayMode: .inline)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
