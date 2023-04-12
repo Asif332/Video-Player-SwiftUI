@@ -1,4 +1,4 @@
-# Custom Video Player 
+# Video Player In SwiftUI
 
 Custom AVPlayer is a SwiftUI sample project having the ability to play multiple AVPlayer items in horizontal paging.
 This is a series of learning experience in which i try to create video player clone using swiftUI and update it as well!
